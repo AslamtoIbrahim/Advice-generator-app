@@ -64,15 +64,30 @@ main {
   font-weight: 500;
 }
 
-.divider-img{
-    margin-bottom: 1rem;
+.divider-img {
+  margin-bottom: 1rem;
 }
 
-.button{
-    background-color: var(--neon-green);
-    display: flex;
-    padding: 0.8rem;
-    border-radius: 999rem;
-    position: absolute;
-    bottom: -1.5rem;
+.button {
+  background-color: var(--neon-green);
+  display: flex;
+  padding: 0.8rem;
+  border-radius: 999rem;
+  position: absolute;
+  bottom: -1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 40rem) {
+  .advice-card {
+    width: 80%;
+  }
+
+  .advice-id {
+    font-size: 0.9rem;
+    font-weight: 550;
+  }
+  .advice-text {
+    font-size: 1.1rem;
+  }
 }
