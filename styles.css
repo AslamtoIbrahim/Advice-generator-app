@@ -7,6 +7,7 @@
   /* Primary */
   --primary-light-cyan: hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
+  --neon-chine-green: hsl(150, 100%, 77%);
   /* Neutral */
   --grayish-blue: hsl(217, 19%, 38%);
   --dark-grayish-blue: hsl(217, 19%, 24%);
@@ -71,18 +72,25 @@ main {
 .button {
   background-color: var(--neon-green);
   display: flex;
-  padding: 0.8rem;
+  padding: 1rem;
   border-radius: 999rem;
   position: absolute;
   bottom: -1.5rem;
   cursor: pointer;
+  transform: rotate(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--neon-chine-green);
+  box-shadow: 0px 0px 12px 1px hsl(150deg 96.58% 76.98%);
+  transform: rotate(90deg);
 }
 
 @media screen and (max-width: 40rem) {
   .advice-card {
     width: 80%;
   }
-
   .advice-id {
     font-size: 0.9rem;
     font-weight: 550;
