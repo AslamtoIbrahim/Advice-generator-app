@@ -1,0 +1,78 @@
+:root {
+  /* font size */
+  --fs-poppins: "Poppins", serif;
+  --fs-roboto: "Roboto", serif;
+
+  /* color scheme */
+  /* Primary */
+  --primary-light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  /* Neutral */
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100dvh;
+  width: 100vw;
+  background-color: var(--dark-blue);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice-card {
+  width: 32rem;
+  background-color: var(--dark-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  gap: 2rem;
+  position: relative;
+}
+
+.advice-id {
+  color: var(--neon-green);
+  font-family: var(--fs-roboto);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.advice-text {
+  color: var(--primary-light-cyan);
+  font-size: 1.2rem;
+  font-family: var(--fs-poppins);
+  text-align: center;
+  font-weight: 500;
+}
+
+.divider-img{
+    margin-bottom: 1rem;
+}
+
+.button{
+    background-color: var(--neon-green);
+    display: flex;
+    padding: 0.8rem;
+    border-radius: 999rem;
+    position: absolute;
+    bottom: -1.5rem;
+}
