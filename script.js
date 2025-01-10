@@ -12,9 +12,10 @@ function changeDividerImage() {
 
   if (windowWidth <= 640) {
     dividerImg.src = '/images/pattern-divider-mobile.svg';
-  } else {
-    dividerImg.src = '/images/pattern-divider-desktop.svg';
+    return;
   }
+  
+  dividerImg.src = '/images/pattern-divider-desktop.svg';
 }
 
 
